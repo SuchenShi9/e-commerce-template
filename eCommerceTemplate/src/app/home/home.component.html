@@ -6,9 +6,28 @@
     </section>
 
     <section class="container mt-4 aa">
-        <div class="firstRow w-25"></div>
-        <h3>Most popular products at moment</h3>
-        <p class="text-center">Enjoy the best store with the best experience!</p>
-        <div class="firstRow "></div>
+
+        <div class="row">
+            <div class="col-md-3 py-5">
+                <div class="firstRow w-25"></div>
+                <h3>Most popular products at moment</h3>
+                <p class="text-center">Enjoy the best store with the best experience!</p>
+                <div class="firstRow"></div>
+            </div>
+
+            <div class="col-md-3 my-4" *ngFor="let product of allProducts; let i = index">
+                <div class="product position-relative p-2 pro">
+                    <a [routerLink]='["/details", i]'></a>
+                    <img [src]='product.image' class="w-100">
+                    <h6 class="text-center my-2">{{product.title|uppercase}}</h6>
+                    <span class="badge badge-warning p-2 price text-white">{{product.price |currency:'$ '}}</span>
+                    <span class="badge spanCat p-2 text-white ">{{product.category}}</span> <br>
+
+                    <a (click)="getData(product)" class="btn btn-primary mt-2 ml-2 card">Add to cart</a>
+                </div>
+
+
+            </div>
+        </div>
     </section>
 </div>

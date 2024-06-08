@@ -1,3 +1,76 @@
+img {
+    height: 330px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+h2 {
+    color: #415a77;
+}
+
+.product .price {
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.spanCat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #778da9;
+    line-height: 1.5;
+}
+
 .firstRow {
     border-top: 1px solid #778da9;
+}
+
+.product a {
+    text-decoration: none;
+}
+
+h6 {
+    color: #415a77;
+}
+
+.mainContainer {
+    background-color: white;
+}
+
+.card {
+    background-color: #415a77;
+    border: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.card:hover {
+    background-color: white;
+    color: #415a77;
+    font-weight: 500;
+}
+
+.pro {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.product {
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+        0.3s box-shadow,
+        0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    padding: 14px 80px 18px 36px;
+    cursor: pointer;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
